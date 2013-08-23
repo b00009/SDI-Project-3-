@@ -6,20 +6,27 @@
 *new spells
 */
 
-var bonus = {
-    "bonusSpells": [
+// JSON Data
+var jsonSpellBook = {
+    "spells": [
         {
-            "spellName": "lightning stike spell"
+            "spellName": "lightning stike spell",
+            "spellPower": "10",
+            "spellLevel": "apprentace"
         },
         
         {
-            "spellName": "hail spell"
+            "spellName": "hail spell",
+            "spellPower": "6",
+            "spellLevel": "apprentace"
         },
         
         {
-            "spellName": "vanish spell"
+            "spellName": "vanish spell",
+            "spellPower": "2",
+            "spellLevel": "apprentace"
+            
         },
         
     ]
 };
-
