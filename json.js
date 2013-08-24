@@ -22,7 +22,7 @@ var jsonSpellBook = {
         },
         
         {
-            "spellName": "vanish spell",
+            "spellName": "Fireball spell",
             "spellPower": "2",
             "spellLevel": "apprentace"
             
