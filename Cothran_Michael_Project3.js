@@ -5,6 +5,7 @@
  *Project 3
  *Rowen Journey
  */
+
 // make javascript object a string
 var jsonstring = JSON.stringify(jsonSpellBook);
 
@@ -19,7 +20,7 @@ var witch = "Rowen",
 
 // my object
 var witch = {
-    fullName:	"Rowen Haven",// property
+    fullName:	"Rowen Haven",
     rank:	"apprentace",
     skills:	["casting spells", "making potions"],
     announce: 	function(message) {
@@ -29,11 +30,11 @@ var witch = {
 },
     checkSpells: function(knownSpells) {
     var spellStatus = knownSpells;
-    if (spellStatus === true) {
-    witch.announce("That's " + spellStatus + ". I do know a few spells.");
-    witch.countSpells(spellStatus, spellCast);
-    } else {
-    witch.announce("Im sorry thats " + spellStatus + ". I don't know any spells.");
+	if (spellStatus === true) {
+	    witch.announce("That's " + spellStatus + ". I do know a few spells.");
+	    witch.countSpells(spellStatus, spellCast);
+	} else {
+	    witch.announce("Im sorry thats " + spellStatus + ". I don't know any spells.");
     };
 },
 // method: procedure
@@ -42,12 +43,12 @@ var witch = {
 	witch.announce("Good! said Jinx. Lets get started We have ");
 	for (var n=0; n <= spellCast.length; n++){
 	    var spellsToLearn = n;
-	    witch.announce(spellsToLearn);
+		witch.announce(spellsToLearn);
 }
-	    witch.announce(" spells to practice.");
+		witch.announce(" spells to practice.");
 	    return spellStatus;
 	} else {
-	    witch.announce("We have no spells to practice. ");
+		witch.announce("We have no spells to practice. ");
 };
 },
     getFullName: function(name){
@@ -67,7 +68,7 @@ var witch = {
     getSpell: function() {
 	for (var n=0; n < receivedjson["spells"].length; n++) {
 	var name = receivedjson["spells"][n].spellName;
-	witch.announce("I have learned, " + name + "!"); // return string
+	    witch.announce("I have learned, " + name + "!"); // return string
 }
 },
 // method: mutator
@@ -86,17 +87,17 @@ var witch = {
 },
 // method: function
     shootLimbs: function(limbs){
-	witch.announce("Aww man. Now I have to clean because " + limbs);
+	    witch.announce("Aww man. Now I have to clean because " + limbs);
 	var limbs = limbs.length;
 	for (var limbsShot = 1; limbsShot < limbs; limbsShot +=7) {
-	witch.announce(limbsShot + " limbs shot down.");
+	    witch.announce(limbsShot + " limbs shot down.");
 	    if (limbs > limbsShot) {
 	
 	var limbsLeft = limbs - limbsShot;
-	witch.announce(limbsLeft + " more to go!");
+	    witch.announce(limbsLeft + " more to go!");
 };
 }
-	witch.announce("Very good. Said Jinx Now lets just hope, that the only thing we run into in these woods are trees.");
+	    witch.announce("Very good. Said Jinx Now lets just hope, that the only thing we run into in these woods are trees.");
 
 } 
 },
